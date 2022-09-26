@@ -1,6 +1,6 @@
 
 #Steps
-#open when premire pro starts
+#open when premiere pro starts
 #Start running
 
 
