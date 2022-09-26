@@ -1,5 +1,4 @@
 
-
 #Steps
 #open when premire pro starts
 #Start running
@@ -8,38 +7,12 @@
 '''
 ############CONTROLS##############
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 
 import test
 from pynput.keyboard  import Key, Controller
 
 keyboard = Controller()
-
-
-
-
 
 keyboard.press('k')
 keyboard.release('k')
