@@ -196,11 +196,6 @@ def listen_print_loop(responses, stream):
             'play' - plays*
             'pause' - pause*
             'select' - selects clip*
-
-
-
-
-
         '''
         print(transcript)
         bruh = transcript
@@ -239,12 +234,6 @@ def listen_print_loop(responses, stream):
             keyboard.press(Key.down)
             keyboard.release(Key.down)
             break
-
-
-
-
-
-
 
 
 def main():
