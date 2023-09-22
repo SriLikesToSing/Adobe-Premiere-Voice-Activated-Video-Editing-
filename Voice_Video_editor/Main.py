@@ -150,38 +150,34 @@ def listen_print_loop(responses, stream):
     the next result to overwrite it, until the response is a final one. For the
     final one, print a newline to preserve the finalized transcription.
     """
+    num_chars_printed = 0
     for response in responses:
-
-        if get_current_time() - stream.start_time > STREAMING_LIMIT:
-            stream.start_time = get_current_time()
-            break
 
         if not response.results:
             continue
 
         result = response.results[0]
-
         if not result.alternatives:
             continue
 
+        # Display the transcription of the top alternative.
         transcript = result.alternatives[0].transcript
 
-        result_seconds = 0
-        result_nanos = 0
+        overwrite_chars = " " * (num_chars_printed - len(transcript))
 
-        if result.result_end_time.seconds:
-            result_seconds = result.result_end_time.seconds
+        if not result.is_final:
+            sys.stdout.flush()
 
-        if result.result_end_time.microseconds:
-            result_nanos = result.result_end_time.microseconds
+            num_chars_printed = len(transcript)
 
-        stream.result_end_time = int((result_seconds * 1000)
-                                     + (result_nanos / 1000000))
+        else:
+            print(transcript + overwrite_chars)
 
-        corrected_time = (stream.result_end_time - stream.bridging_offset
-                          + (STREAMING_LIMIT * stream.restart_counter))
-        # Display interim results, but with a carriage return at the end of the
-        # line, so subsequent lines will overwrite them.
+            if re.search(r"\b(exit|quit)\b", transcript, re.I):
+                print("Exiting..")
+                break
+
+            num_chars_printed = 0
 
 
         '''
@@ -198,42 +194,40 @@ def listen_print_loop(responses, stream):
             'select' - selects clip*
         '''
         print(transcript)
-        bruh = transcript
-        if(transcript == 'select'):
-            keyboard = Controller()
+        keyboard = Controller()
+        if(transcript == 'select' or transcript == ' select'):
             keyboard.press('d')
             keyboard.release('d')
-            break
-        elif (transcript == 'front'):
-            keyboard = Controller()
+        elif (transcript == 'unselect' or transcript == ' unselect'):
+            with keyboard.pressed(Key.shift):
+                with keyboard.pressed(Key.ctrl):
+                    keyboard.press('a')
+                    keyboard.release('a')
+        elif (transcript == 'frame' or transcript == ' frame'):
             keyboard.press(Key.right)
             keyboard.release(Key.right)
-            break
-        elif (transcript == 'back'):
-            keyboard = Controller()
+        elif (transcript == 'back frame'  or transcript == ' back frame'):
             keyboard.press(Key.left)
             keyboard.release(Key.left)
-            break
-        elif (bruh == 'play'):
-            keyboard = Controller()
+        elif (transcript == 'play' or transcript == ' play' or transcript == 'pause' or transcript == ' pause'):
             keyboard.press(Key.space)
             keyboard.release(Key.space)
-            break
-
-        elif(transcript == 'cut'):
-            keyboard = Controller()
+        elif(transcript == 'cut' or transcript == ' cut'):
             keyboard.press('x')
             keyboard.release('x')
         elif(transcript == 'next'):
-            keyboard = Controller()
             keyboard.press(Key.up)
             keyboard.release(Key.up)
-            break
-        elif (transcript == 'previous'):
-            keyboard = Controller()
+        elif (transcript == 'previous' or transcript == ' previous'):
+            keyboard.press(Key.up)
+            keyboard.release(Key.up)
+        elif (transcript == "forward" or transcript == " forward"):
             keyboard.press(Key.down)
             keyboard.release(Key.down)
-            break
+        elif (transcript == "save" or transcript == ' save'):
+            with keyboard.pressed(Key.ctrl):
+                keyboard.press('s')
+                keyboard.release('s')
         elif (transcript == 'quit' or transcript == 'exit'):
             print("Quitting... \n")
             exit(0)

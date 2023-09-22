@@ -1,3 +1,3 @@
 @echo off
-start "" "C:\Program Files\Adobe\Adobe Premiere Pro 2020\Adobe Premiere Pro.exe"
-start "" "C:\Users\madhu\Desktop\Adobe-Premiere-Voice-Activated-Video-Editing-\Voice_Video_editor\Main.exe"
+start "" "Path to Adobe premire pro.exe"
+start "" "Path to Main.exe"
