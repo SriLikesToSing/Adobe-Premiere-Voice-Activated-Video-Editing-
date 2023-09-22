@@ -172,8 +172,8 @@ def listen_print_loop(responses, stream):
         if result.result_end_time.seconds:
             result_seconds = result.result_end_time.seconds
 
-        if result.result_end_time.nanos:
-            result_nanos = result.result_end_time.nanos
+        if result.result_end_time.microseconds:
+            result_nanos = result.result_end_time.microseconds
 
         stream.result_end_time = int((result_seconds * 1000)
                                      + (result_nanos / 1000000))
@@ -234,6 +234,9 @@ def listen_print_loop(responses, stream):
             keyboard.press(Key.down)
             keyboard.release(Key.down)
             break
+        elif (transcript == 'quit' or transcript == 'exit'):
+            print("Quitting... \n")
+            exit(0)
 
 
 def main():
@@ -241,7 +244,7 @@ def main():
 
     client = speech.SpeechClient()
     config = speech.types.RecognitionConfig(
-        encoding=speech.enums.RecognitionConfig.AudioEncoding.LINEAR16,
+        encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
         sample_rate_hertz=SAMPLE_RATE,
         language_code='en-US',
         max_alternatives=1)
