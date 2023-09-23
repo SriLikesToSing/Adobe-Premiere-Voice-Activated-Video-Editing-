@@ -37,3 +37,5 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/SriLikesToSing/Adobe-Premiere-Voice-Activated-Video-Editing-
+
+2. 
