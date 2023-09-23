@@ -43,28 +43,27 @@ Before you begin, ensure you have the following installed:
 
 These commands are voice-activated. Simply speak the following phrases to control the application:
 
-1. **"Select"** - Presses the 'd' key.
+1. **"select"** - Presses the 'd' key.
 
-2. **"Unselect"** - Deselects by pressing 'Ctrl' + 'Shift' + 'a' keys.
+2. **"unselect"** - Deselects by pressing 'Ctrl' + 'Shift' + 'a' keys.
 
-3. **"Frame"** - Navigates one frame forward using voice command.
+3. **"frame"** - Navigates one frame forward using voice command.
 
-4. **"Back Frame"** - Navigates one frame backward using voice command.
+4. **"back frame"** - Navigates one frame backward using voice command.
 
-5. **"Play"** or **"Pause"** - Toggles play/pause with voice command.
+5. **"play"** or **"Pause"** - Toggles play/pause with voice command.
 
-6. **"Cut"** - Cuts selected content with voice command.
+6. **"cut"** - Cuts selected content with voice command.
 
-7. **"Next"** - Navigates to the next item using voice command.
+7. **"next"** - Navigates to the next item using voice command.
 
-8. **"Previous"** - Navigates to the previous item using voice command.
+8. **"previous"** - Navigates to the previous item using voice command.
 
-9. **"Forward"** - Moves forward using voice command.
+9. **"forward"** - Moves forward using voice command.
 
-10. **"Save"** - Saves the current document using voice command.
+10. **"save"** - Saves the current document using voice command.
 
-11. **"Quit"** or **"Exit"** - Quits the program using voice command.
+11. **"quit"** or **"exit"** - Quits the program using voice command.
 
-Please note that the voice commands are case-insensitive.
 
   
