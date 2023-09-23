@@ -14,13 +14,6 @@ Welcome to the Adobe Voice-Activated Video Editing project! This project enhance
   - [Voice Commands](#voice-commands)
   - [Examples](#examples)
 
-- [Contributing](#contributing)
-  - [Development Setup](#development-setup)
-  - [Contributing Guidelines](#contributing-guidelines)
-  - [Code of Conduct](#code-of-conduct)
-
-- [License](#license)
-
 ## Getting Started
 
 ### Prerequisites
