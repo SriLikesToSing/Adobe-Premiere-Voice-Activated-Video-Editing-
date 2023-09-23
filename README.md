@@ -38,4 +38,12 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/SriLikesToSing/Adobe-Premiere-Voice-Activated-Video-Editing-
 
-2. 
+2. Install the requirements using
+   ```bash
+   pip install -r requirements.txt
+
+3. After downloading the google cloud services CLI locally and setting up credentials from [this link](https://cloud.google.com/docs/authentication/provide-credentials-adc), download enable the [speech to text API](https://console.cloud.google.com/marketplace/product/google/speech.googleapis.com?q=search&referrer=search)
+
+4.  Edit the .bat file and change the path of main.exe and adobepremire.exe (wherever you stored it)
+
+5.  enjoy. 
