@@ -39,4 +39,6 @@ Before you begin, ensure you have the following installed:
 
 4.  Edit the .bat file and change the path of main.exe and adobepremire.exe (wherever you stored it)
 
-5.  enjoy. 
+## Voice Commands List
+
+  
