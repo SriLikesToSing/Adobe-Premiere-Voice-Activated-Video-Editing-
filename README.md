@@ -56,15 +56,13 @@ These commands are voice-activated. Simply speak the following phrases to contro
 
 6. **"cut"** - Cuts selected content with voice command.
 
-7. **"next"** - Navigates to the next item using voice command.
+7. **"previous"** - Goes back 5 seconds.
 
-8. **"previous"** - Navigates to the previous item using voice command.
+8. **"forward"** - Moves forward 5 seconds.
 
-9. **"forward"** - Moves forward using voice command.
+9. **"save"** - Saves the current file using voice command.
 
-10. **"save"** - Saves the current document using voice command.
-
-11. **"quit"** or **"exit"** - Quits the program using voice command.
+10. **"quit"** or **"exit"** - Quits the program using voice command.
 
 
   
