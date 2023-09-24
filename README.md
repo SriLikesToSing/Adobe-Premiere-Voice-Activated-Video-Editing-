@@ -52,7 +52,7 @@ These commands are voice-activated. Simply speak the following phrases to contro
 
 4. **"back frame"** - Navigates one frame backward using voice command.
 
-5. **"play"** or **"Pause"** - Toggles play/pause with voice command.
+5. **"play"** or **"pause"** - Toggles play/pause with voice command.
 
 6. **"cut"** - Cuts selected content with voice command.
 
