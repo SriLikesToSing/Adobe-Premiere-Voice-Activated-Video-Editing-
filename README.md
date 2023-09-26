@@ -60,9 +60,11 @@ These commands are voice-activated. Simply speak the following phrases to contro
 
 8. **"forward"** - Moves forward 5 seconds.
 
-9. **"save"** - Saves the current file using voice command.
+9. **"undo"** - undo's action.
 
-10. **"quit"** or **"exit"** - Quits the program using voice command.
+10. **"save"** - Saves the current file using voice command.
+
+11. **"quit"** or **"exit"** - Quits the program using voice command.
 
 
   
