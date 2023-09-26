@@ -4,7 +4,7 @@
 
 Welcome to the Adobe Voice-Activated Video Editing project! This project enhances video editing in Adobe Premiere Pro by integrating voice commands for various editing tasks. Below, you'll find information on how to set up and use the system.
 
-<img src="[https://github.com/SriLikesToSing/Adobe-Premiere-Voice-Activated-Video-Editing-/Voice_Video_editor/demonstration.gif](https://github.com/SriLikesToSing/Adobe-Premiere-Voice-Activated-Video-Editing-/blob/master/Voice_Video_editor/demonstration.gif)">
+<img src="https://github.com/SriLikesToSing/Adobe-Premiere-Voice-Activated-Video-Editing-/Voice_Video_editor/demonstration.gif](https://github.com/SriLikesToSing/Adobe-Premiere-Voice-Activated-Video-Editing-/blob/master/Voice_Video_editor/demonstration.gif">
 
 ## Table of Contents
 
