@@ -179,6 +179,20 @@ def listen_print_loop(responses, stream):
 
             num_chars_printed = 0
 
+
+        '''
+        features :
+            '10 + x' - goes forward 10 + x
+            '10 -  x ' - goes back 10 - x
+            '5 + x' - goes forward 5 + x
+            '5 - x ' - goes back 5 - x
+            --------------------------
+            'cut' - make a cut to selected clip*
+                0-0 --- selects
+            'play' - plays*
+            'pause' - pause*
+            'select' - selects clip*
+        '''
         print(transcript)
         keyboard = Controller()
         if(transcript == 'select' or transcript == ' select'):
@@ -214,6 +228,10 @@ def listen_print_loop(responses, stream):
             with keyboard.pressed(Key.ctrl):
                 keyboard.press('s')
                 keyboard.release('s')
+        elif (transcript == "undo" or transcript == ' undo'):
+            with keyboard.pressed(Key.ctrl):
+                keyboard.press('z')
+                keyboard.release('z')
         elif (transcript == 'quit' or transcript == 'exit'):
             print("Quitting... \n")
             exit(0)
