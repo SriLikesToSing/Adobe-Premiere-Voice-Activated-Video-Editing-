@@ -68,5 +68,5 @@ These commands are voice-activated. Simply speak the following phrases to contro
 
 11. **"quit"** or **"exit"** - Quits the program using voice command.
 
-
+This is a minimum viable product. Meaning tons of specific word commands can be added to make complex edits.
   
